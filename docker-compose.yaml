@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  radius:
+    container_name: sm-radius
+    #entrypoint: ["sh", "-c", "while true; do sleep 30; done"]
+    restart: always
+    build:
+       context: .
+       dockerfile: ./Dockerfile    
+    command: []
+    ports:
+      - "1812-1813:1812-1813/udp"
+      #- "10000:1812/udp"
+    volumes:
+       - "./temp_files:/tmp:rw"
+       - "./raddb:/etc/raddb:rw"

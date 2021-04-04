@@ -1,0 +1,33 @@
+#    radius secret for this setup is:     sharedSecret    # defined in /etc/raddb/clients.conf
+#    use radcrypt utilitiy for encrypting passwords:     radcrypt admin123       in this instance, I got fMB90CRSHkyQU
+#    Test with radcrypt -c admin123 fMB90CRSHkyQU         you will see "Password O.K."
+#
+#    after install Test from base host: radtest admin admin123 localhost 1812 sharedSecret          # you will get back an answer if it's working
+#
+#    Note:   it's best to combine the MSO and ACI  AVPairs like this:  Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"   # this is after 3.1.x of MSO, othewise it won't work.  This was made for SSO capability on ND.
+#    Please see: https://unofficialaciguide.com/2020/12/28/upgrading-aci-fabric-and-mso-please-read-this-first/
+#
+#    Old Method is show below:   DO NOT DO THIS:
+#           #Cisco-AVPair = "shell:domains =all/admin/",   # this is the old style pre 3.1.x MSO,  will not work any more
+#           #Cisco-AVPair += "shell:msc-roles=powerUser/", # this is the old stye pre 3.1.x MSO, will not work any more
+#
+#    Remember to use docker-compose restart everytime you make a change in the AVPairs. ( do this from the directory that has the docker-compose.yaml file)
+
+
+
+
+
+
+
+
+
+
+
+admin      Crypt-Password :=     "fMB90CRSHkyQU"
+           Service-Type = NAS-Prompt-User,
+           Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"
+
+
+user1      Crypt-Password :=     "4PPeOM/u2rfSg"
+           Service-Type = NAS-Prompt-User,
+           Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"

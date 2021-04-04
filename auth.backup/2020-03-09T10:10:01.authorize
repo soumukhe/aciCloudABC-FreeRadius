@@ -1,0 +1,90 @@
+admin      Crypt-Password :=     "4PPeOM/u2rfSg"
+           Service-Type = NAS-Prompt-User,
+           Cisco-AVPair = "shell:domains =all/admin/",
+           Cisco-AVPair += "shell:msc-roles=powerUser/",
+           Cisco-AVPair += "shell:roles=network-admin"
+
+dkooia 	 Crypt-Password := "Oi6YhZ36lmToE"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+
+dkooiapriv 	 Crypt-Password := "fceF12YY0ynEg"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+dkooi 	 Crypt-Password := "FsW2TIcuyBQCw"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+dkooinp 	 Crypt-Password := "yn16ilSvMrb22"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+
+dkooip 	 Crypt-Password := "Tl9NpjPItp4co"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+damonli 	 Crypt-Password := "llGQSahom/Pdk"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+gorans 	 Crypt-Password := "66QYPjm4ZEav6"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+soumukhe 	 Crypt-Password := "qoimdP04Wa1vQ"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+clakits 	 Crypt-Password := "jBsPv43Dc0H/6"
+	Service-Type = NAS-Prompt-User,
+	Cisco-AVPair = "shell:domains =all/admin/",
+	Cisco-AVPair += "shell:msc-roles=SMDefineCustom/",
+	Cisco-AVPair += "shell:roles=customrole"
+
+kvenkat 	 Crypt-Password := "oqPc4Hbj19.SY"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+
+jantanti 	 Crypt-Password := "YtC4.LhJIDsWg"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+
+sankoshy 	 Crypt-Password := "izAd5ZTEAs6IU"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+
+ythallas 	 Crypt-Password := "Wp8LM5SzXgIEE"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+
+robbritc 	 Crypt-Password := "jivsvIQdEx6ps"
+    Service-Type = NAS-Prompt-User,
+    Cisco-AVPair = "shell:domains =all//admin",
+    Cisco-AVPair += "shell:msc-roles=/SMDefineCustom",
+    Cisco-AVPair += "shell:roles=network-operator"
+

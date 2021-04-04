@@ -1,0 +1,8 @@
+admin      Crypt-Password :=     "fMB90CRSHkyQU"
+           Service-Type = NAS-Prompt-User,
+           Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"
+
+
+user1      Crypt-Password :=     "4PPeOM/u2rfSg"
+           Service-Type = NAS-Prompt-User,
+           Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"
