@@ -20,7 +20,7 @@
 
 
 
-# Below not applicable. Using Terraform Main Module to do everything automatically
+# Below not applicable. Using Terraform Main Module azurerm-vmmain to do everything automatically
 #  How to Install:  <br>
    Clone this repo <br>
    cd to the directory where docker-compose.yaml file is:  ~/aciCloudABC-FreeRadius <br>
