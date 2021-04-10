@@ -1,7 +1,7 @@
-# Meant for use for ACI Cloud Bootcamp
+# Meant for use for ACI Cloud Bootcamp (freeradius docker-compose on Azure VM)
 
 
-  authorize file is in ~/aciCloudABC-FreeRadius//raddb/mods-config/files
+  authorize file is in ~/aciCloudABC-FreeRadius/raddb/mods-config/files
 
  radius secret for this setup is:     sharedSecret    # defined in /etc/raddb/clients.conf <br>
  use radcrypt utilitiy for encrypting passwords:     radcrypt admin123       in this instance, I got fMB90CRSHkyQU <br>
@@ -20,7 +20,7 @@
 
 
 
-
+# Below not applicable. Using Terraform Main Module to do everything automatically
 #  How to Install:  <br>
    Clone this repo <br>
    cd to the directory where docker-compose.yaml file is:  ~/aciCloudABC-FreeRadius <br>
