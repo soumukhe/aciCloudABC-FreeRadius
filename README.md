@@ -26,8 +26,8 @@
  If you want to do single line method, you can, but you have to do it in a specific order:  Please see: https://unofficialaciguide.com/2020/12/28/upgrading-aci-fabric-and-mso-please-read-this-first/  <br>
 
 # Old AvPair method is show below:   DO NOT DO THIS: <br>
-        #Cisco-AVPair = "shell:domains =all/admin/",   # this is the old style pre 3.1.x MSO,  will not work any more <br>
-        #Cisco-AVPair += "shell:msc-roles=powerUser/", # this is the old stye pre 3.1.x MSO, will not work any more <br>
+        Cisco-AVPair = "shell:domains =all/admin/",   # this is the old style pre 3.1.x MSO,  will not work any more <br>
+        Cisco-AVPair += "shell:msc-roles=powerUser/", # this is the old stye pre 3.1.x MSO, will not work any more <br>
 <br>
 # Remember to use "docker-compose restart" everytime you make a change in the AVPairs. ( do this from the directory that has the docker-compose.yaml file) <br>
 
