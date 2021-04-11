@@ -26,7 +26,7 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
  radtest admin admin123 localhost:1812 1812 sharedSecret          # you will get back an answer if it's working <br>
 
 # New Style AvPair:   (note that for MSO, "msc-roles" is not valid any more.  The new one is "msoall")
- Note:   it's best to combine the MSO and ACI  AVPairs like this:  Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"   # this is after 3.1.x of MSO, 
+ Note:   it's best to combine the MSO and APIC  AVPairs like this:  Cisco-AVPair = "shell:domains =all/admin/,msoall/powerUser/"   # this is after 3.1.x of MSO, 
   This was made for SSO capability on ND. <br>
  If you want to do single line method, you can, but you have to do it in a specific order:  Please see: https://unofficialaciguide.com/2020/12/28/upgrading-aci-fabric-and-mso-please-read-this-first/  <br>
 
