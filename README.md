@@ -38,7 +38,7 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
 
 
 # ----------------------------------------------------------------------------------------------------------------------
-# Below this section is not applicable for Cloud ACI Bootcamp. This information can be used for spinning up freeradius on any Ubuntu VM.
+# Below this section is not applicable for Cloud ACI Bootcamp. This information can be used for spinning up freeradius on any Ubuntu VM which has already been updated/prepped with dependencies, installed docker and docker-compose.
 
 # In the bootcamp, we are using Terraform Main Module azurerm-vmmain to do everything automatically 
 i.e.  install Ubuntu on Azure Cloud, update Ubuntu and install dependencies, install docker and docker compose, clone this freeradius repo from git and spin up the radius container.
