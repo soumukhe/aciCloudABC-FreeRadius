@@ -10,7 +10,9 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
   5. docker-compose restart <br>
   
 
- radius secret for this setup is:     sharedSecret    # defined in /etc/raddb/clients.conf <br>
+ # radius secret for this setup is:     sharedSecret    
+ This radius secret is defined in /etc/raddb/clients.conf in the container.  If you wanted to take a look please go into the conatiner and look.  "docker exec -it sm-radius /bin/bash"  will get you inside the container. <br>
+ Also note that on the base Azure VM,  the directory ~/aciCloudABC-FreeRadius/raddb  is mapped to /etc/raddb inside the container,  If you look at docker-compose.yml this will become evident <br>
  
  # Making Encrypted Password <br>
  use radcrypt utilitiy for encrypting passwords:     radcrypt admin123       in this instance, I got fMB90CRSHkyQU <br>
