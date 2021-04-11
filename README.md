@@ -1,4 +1,5 @@
-# Meant for use for ACI Cloud Bootcamp (freeradius docker-compose on Azure VM)
+# freeradius docker-compose on Azure VM
+# Meant for use for ACI Cloud Bootcamp 
 Remember the Azure VM with Radius Installed was spun up by Terraform by cloning my git repo: https://github.com/soumukhe/azurerm-vmmain.git and doing terraform init and terraform apply.   
 
 
