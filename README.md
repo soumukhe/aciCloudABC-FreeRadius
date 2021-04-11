@@ -5,7 +5,7 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
   # authorize file is where you define users and avPairs: <br>
   1. ssh in to the azure VM.   ssh -i sshPrivKeyName azureuser@azureVM_ip   To find the IP, please go to the Terraform Directory "azurerm-vmmain" (on your local mac)  and do terraform output <br>
   2. cd aciCloudABC-FreeRadius  (this is on the Azure VM)<br>
-  3. make your encrypted password that you will use. e.g.  radcrypt admin123 <br>
+  3. make your encrypted password that you will use. e.g.  radcrypt admin123  or   radcrypt yourUserName YourDesiredPassword <br>
   4. vi ~/aciCloudABC-FreeRadius/raddb/mods-config/files/authorize   Make sure to use the encrypted password from step 3 above. <br>
   5. docker-compose restart <br>
   
