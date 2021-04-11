@@ -1,4 +1,5 @@
 # Meant for use for ACI Cloud Bootcamp (freeradius docker-compose on Azure VM)
+Remember the Azure VM with Radius Installed was spun up by Terraform by cloning my git repo: https://github.com/soumukhe/azurerm-vmmain.git and doing terraform init and terraform apply.   
 
 
   # authorize file is where you define users and avPairs: <br>
