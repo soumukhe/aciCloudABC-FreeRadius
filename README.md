@@ -37,7 +37,7 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
 # Remember to use "docker-compose restart" everytime you make a change in the AVPairs. ( do this from the directory that has the docker-compose.yaml file) <br>
 
 
-
+# ----------------------------------------------------------------------------------------------------------------------
 # Below This section is not applicable for Cloud ACI Bootcamp. This information can be used for spinning up freeradius on any Ubuntu VM.
 
 # In the bootcamp, we are using Terraform Main Module azurerm-vmmain to do everything automatically 
