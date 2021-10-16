@@ -31,7 +31,7 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
        soumukhe@sjc-radius:~$ radcrypt -c kiwi1234 fQJCgCkJ41OTk
        Password OK
        
-  For this reason, you may want to use the commad below:
+       For this reason, you may want to use openssl command to generate hash:
        openssl passwd -salt secret -1 kiwi12345678
        $1$secret$RJDdA7RX7Eu9y0GmTQJU31
 
