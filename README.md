@@ -33,7 +33,7 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
        
        For this reason, you may want to use openssl command to generate hash:
        openssl passwd -salt secret -1 kiwi12345678
-       $1$secret$RJDdA7RX7Eu9y0GmTQJU31
+       $1$secret$RJDdA7RX7Eu9y0GmTQJU31       # use the entire string as the Crypt-Password in authorize file
 
 
  # Testing quickly to make sure that radius server is returning correct avApair: <br>
