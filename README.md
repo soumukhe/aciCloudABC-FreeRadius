@@ -21,6 +21,20 @@ Remember the Azure VM with Radius Installed was spun up by Terraform by cloning 
  
  # Testing to make sure your encryted password is what your plain text is: <br>
  Test with radcrypt -c admin123 fMB90CRSHkyQU         you will see "Password O.K." <br>
+ 
+ # Note:  radcrypt only uses 1st 8 characters.  So, kiwi1234  and   kiwi12345678 will hash to the same value
+ i.e.  if you have a 12 character password,  using only the first 8 will work for login.  
+ 
+        soumukhe@sjc-radius:~$ radcrypt kiwi123456678
+        fQJCgCkJ41OTk
+        
+       soumukhe@sjc-radius:~$ radcrypt -c kiwi1234 fQJCgCkJ41OTk
+       Password OK
+       
+  For this reason, you may want to use the commad below:
+       openssl passwd -salt secret -1 kiwi12345678
+       $1$secret$RJDdA7RX7Eu9y0GmTQJU31
+
 
  # Testing quickly to make sure that radius server is returning correct avApair: <br>
  radtest admin admin123 localhost:1812 1812 sharedSecret          # you will get back an answer if it's working <br>
